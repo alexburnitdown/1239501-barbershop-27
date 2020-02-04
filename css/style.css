@@ -14,3 +14,65 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+font-size: 16px;
+line-height: 20px;
+color:inherit;
+
+background-color: inherit;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: white;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+
+  background-color: #242424;
+}
+
+.advantages h3 {
+  font-size: 30px;
+  line-height:42px;
+}
+
+.index-columns {
+  color: black;
+
+  background-color: #f8f5f2;
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news ul {
+  list-style: none;
+}
+
+.news-item time {
+  text-transform: none;
+}
+
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
