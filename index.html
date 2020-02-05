@@ -62,7 +62,7 @@
        <p>В нашей команде пополнение, Борис "Бритва" Стригунец,<br>обладатель множества титулов и наград пополнил наши<br>стройные ряды</p>
        <time datetime="2019-01-18">18 января</time>
      </li>
-     <button type="button">Все новости</button>
+     <a class="button" href="news.html">Все новости</a>
    </ul>
  </section>
 
@@ -76,6 +76,7 @@
 </section>
 </div>
 
+<div class="index-columns">
 <section>
   <h2>Контактная информация</h2>
   <p>Барбершоп "Бородинский"<br>
@@ -84,8 +85,8 @@
   <p>Время работы:<br>
     Пн-Пт: С 10:00 ДО 22:00<br>
   Сб-Вс: С 10:00 до 19:00</p>
-  <a href="#">Как проехать</a>
-  <a href="#">Обратная связь</a>
+  <a href="map.html" class="button">Как проехать</a>
+  <a href="contacts.html" class="button">Обратная связь</a>
 </section>
 
 <section class="appointment">
@@ -94,45 +95,43 @@
   <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
     <p class="appointment-item">
       <label for="appointment-date">Дата</label>
-      <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2019">
+      <input id="appointment-date" type="date" name="date" value="" placeholder="08.10.2019">
     </p>
     <label for="appointment-time">Время</label>
-    <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+    <input id="appointment-time" type="time" name="time" value="" placeholder="10:00">
     <p class="appointment-item">
       <label for="appointment-name">Ваше имя</label>
       <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
     </p>
     <p class="appointment-item">
       <label for="appointment-tel">Телефон</label>
-      <input id="appointment-tel" type="text" name="tel"  value="" placeholder="+7 123 456-78-90">
+      <input id="appointment-tel" type="tel" name="phone"  value="" placeholder="+7 123 456-78-90">
     </p>
     <button class="button" type="submit">Отправить</button>
   </form>
 </section>
+</div>
 
 </main>
 
-<footer>
-  <p>
+<footer class="main-footer">
+  <p class="footer-contacts">
     Барбершоп "Бородинский"<br>
     Адрес:г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8
-  </p>
-  <div class="map-link">
-    <a href="#">Как нас найти?</a>
-  </div>
-  <div class="tel-link">
+    <a href="#">Как нас найти?</a><br>
     <a href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
-  </div>
-  <div>
+  </p>
+  <div class="footer-social">
     <p>Давайте дружить!</p>
     <ul>
-      <li><a href="#">ВК</a></li>
-      <li><a href="#">ФБ</a></li>
-      <li><a href="#">ИНСТА</a></li>
+      <li><a href="#" class="social-button">ВК</a></li>
+      <li><a href="#" class="social-button">ФБ</a></li>
+      <li><a href="#" class="social-button">ИНСТА</a></li>
     </ul>
   </div>
-  <p>Разработано
-    <a href="#">HTML Academy</a>
+  <p class="footer-copyright">
+    <b>Разработано</b>
+    <a href="#" class="button">HTML Academy</a>
   </p>
 </footer>
 
@@ -147,7 +146,7 @@
       <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
     </p>
     <p class="login-password-info">
-      <label for="remember">
+      <label class="login-checkbox">
         <input id="remember" type="checkbox" name="remember">
         Запомните меня
       </label>
