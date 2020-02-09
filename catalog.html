@@ -43,7 +43,7 @@
 			<form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Производители:</legend>
-          <ul>
+          <ul class="filter-producers">
             <li class="filter-option">
               <label >
                 <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="baxter-of-california" checked>
@@ -65,9 +65,9 @@
               Malin+Goetz</label>
             </li>
             <li class="filter-option">
-              <label >
-                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="murrays" disabled>
-              Murray's</label>
+
+                <input type="checkbox" id="Murray" class="visually-hidden filter-input filter-input-checkbox" name="murrays" disabled>
+              <label for="Murray">Murray's</label>
             </li>
             <li class="filter-option">
               <label >
@@ -193,28 +193,25 @@
 </section>
 </main>
 
-<footer>
-  <p>
-   Барбершоп "Бородинский"<br>
-   Адрес:г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8
- </p>
- <div class="map-link">
-   <a href="#">Как нас найти?</a>
- </div>
- <div class="tel-link">
-   <a href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
- </div>
- <div>
-   <p>Давайте дружить!</p>
-   <ul>
-    <li><a href="#">ВК</a></li>
-    <li><a href="#">ФБ</a></li>
-    <li><a href="#">ИНСТА</a></li>
-  </ul>
-</div>
-<p>Разработано
- <a href="#">HTML Academy</a>
-</p>
+<footer class="main-footer">
+  <p class="footer-contacts">
+    Барбершоп "Бородинский"<br>
+    Адрес:г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8
+    <a href="#">Как нас найти?</a><br>
+    <a href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
+  </p>
+  <div class="footer-social">
+    <p>Давайте дружить!</p>
+    <ul>
+      <li><a href="#" class="social-button">ВК</a></li>
+      <li><a href="#" class="social-button">ФБ</a></li>
+      <li><a href="#" class="social-button">ИНСТА</a></li>
+    </ul>
+  </div>
+  <p class="footer-copyright">
+    <b>Разработано</b>
+    <a href="#" class="button">HTML Academy</a>
+  </p>
 </footer>
 
 <section class="modal modal-login">
@@ -228,7 +225,7 @@
       <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
     </p>
     <p class="login-password-info">
-      <label for="remember">
+      <label class="login-checkbox">
         <input id="remember" type="checkbox" name="remember">
         Запомните меня
       </label>
